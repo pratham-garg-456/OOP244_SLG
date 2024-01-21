@@ -1,0 +1,42 @@
+Point out the error in code below, their is only 1 error
+
+#include <iostream>
+
+#define NO_TRANSACTIONS 3
+
+void add(double*, const Transaction*);       
+
+struct Transaction {
+    int acct;      // account number
+    char type;     // credit 'c' debit 'd'
+    double amount; // transaction amount
+};
+
+void enter(Transaction* tr);
+void display(const Transaction* tr); 
+
+using namespace std;
+
+int main() {
+    int i;
+    double balance = 0.0;
+    Transaction tr;
+
+    for (i = 0; i < NO_TRANSACTIONS; i++) {
+        enter(&tr);
+        display(&tr);
+        add(&balance, &tr);
+    }
+    cout << "Balance " << balance << endl;
+}
+
+void add(double* bal, const Transaction* tr) {
+    *bal += (tr->type == 'd' ? -tr->amount : tr->amount);
+}
+
+void enter(Transaction* tr) {
+
+}
+void display(const Transaction* tr) {
+
+}
