@@ -1,4 +1,7 @@
-In alphabatic order
+In alphabetic order
+
+Book:
+Schaum's Outline of Programming With C++, Book by John R. Hubbard
 
 Course notes:
 https://intro2oop.sdds.ca/
@@ -6,6 +9,9 @@ https://intro2oop.sdds.ca/
 Pointers:
 https://www.youtube.com/watch?v=zuegQmMdy8M&ab_channel=freeCodeCamp.org
 
-Video Lectures From experienced Faculty:
+Video Lectures From Experienced Faculty:
 https://www.youtube.com/user/fardaad/playlists
+
+
+
 
