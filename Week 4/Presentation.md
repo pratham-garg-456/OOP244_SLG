@@ -41,6 +41,8 @@
 #### Extend the Rectangle class from Question 1 to incorporate the concept of an empty state. If the dimensions set using setDimensions are wrong, Set the object to be in an empty state. Display an appropriate message in the display function for an empty state.
 
 ### Ans.
+
+```
 #include <iostream>
 using namespace std;
 
@@ -95,7 +97,7 @@ int main() {
 
     return 0;
 }
-
+```
 
 
  
