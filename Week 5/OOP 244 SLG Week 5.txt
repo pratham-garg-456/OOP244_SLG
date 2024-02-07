@@ -1,0 +1,192 @@
+﻿Diego
+
+
+class Car{
+        char* make;
+        char* model;  // dynamic memory
+        int year;
+public:
+        Car(){  // default constructor
+           this->make = nullptr;
+        this->model = nullptr;
+        this->year = 0;
+        }
+        void display(){
+        if(this->make == nullptr && this->model == nullptr && this->year == 0){
+        cout << "Empty car" << endl;
+        } else {
+          cout << (*this).make << " " << (*this).model << " " << (*this).year << endl; // one error the *this
+        }
+                
+       }
+   }
+};
+Car newCar;
+newCar.display();
+
+
+
+
+Chris
+class Car{
+private: // private key work is optional
+char make[50];
+char model[50];  // static memory
+int year;
+
+
+public:
+
+
+
+
+  Car(const char* make, const char* model) {
+strncpy(this->make, make, sizeof(this->make) - 1); // do research
+this->make[sizeof(this->make) - 1] = '\0';
+ strncpy(this->model, model, sizeof(this->model) - 1);
+this->model[sizeof(this->model) - 1] = '\0';
+this->year=2024;
+}
+
+
+void display()
+{
+ if (make[0] == '\0' && model[0] == '\0' && year == 0)
+{
+   std::cout << "Empty Car" << std::endl;
+}
+         
+ else
+{
+  std::cout << "Make: " << this->make << ", Model: " << this->model << ", Year: " << this->year << std::endl;
+}
+          
+}
+
+
+Car newCar();
+Char make3[50] = “chevorlet”;
+
+
+Car newCar2(make3, “sunny”)
+
+
+
+
+
+
+
+
+Bankanthony - Q1
+class Car {
+        char* m_make[9]; // + Null termintor
+        char* m_model[9]; // + Null termintor
+        int m_year;
+
+
+        Car() {
+        this->m_make[9]{0};
+        this->m_model[9] {0};
+        this->m_year = 0;
+        }
+public:
+        void display(){
+//…
+}
+}
+
+
+
+
+"class Car {
+        char*
+
+
+I have issues when it comes to this guys."
+
+
+
+
+
+
+Elena
+class Car
+{
+char make [10];
+char model[10];
+int year;
+public:
+Car()
+{
+this->make=0;
+this->model= 0;
+this->year= 0;
+}
+void display()
+{
+Cout << “Empty Car” << endl;
+Cout << (*this).make<< endl: // display all the data members 
+}
+}
+Car Car1;
+Car1.display(); 
+
+
+
+
+
+
+
+
+
+
+Vithursh
+#include <iostream>
+using namespace std;
+
+
+
+
+class Car{
+
+
+Car() {
+
+
+char *make;
+this->make = '\0';
+
+
+char *model;
+this->model = '\0';
+
+
+int year;
+this.year = 0;
+
+
+}
+
+
+public:
+I did not create the “if statement”
+void display(char *make, char *model, int year){
+        *this.make = make;
+        *this.model = model;
+        this.year = year;
+        cout << *this.make<< " " << *this.model << " " << *this.year << endl; 
+
+
+}
+
+
+
+
+
+
+int main(){
+        
+        Car c1;
+
+
+}
