@@ -1,4 +1,4 @@
-﻿Diego
+Diego
 
 
 class Car{
@@ -36,8 +36,11 @@ int year;
 
 
 public:
-
-
+Car(){
+make[0];
+model[0]='\0';
+year=0;
+}
 
 
   Car(const char* make, const char* model) {
@@ -62,13 +65,10 @@ void display()
 }
           
 }
-
-
-Car newCar();
 Char make3[50] = “chevorlet”;
 
 
-Car newCar2(make3, “sunny”)
+Car newCar2(make3, “sunny”, 2012)
 
 
 
@@ -125,7 +125,7 @@ this->year= 0;
 void display()
 {
 Cout << “Empty Car” << endl;
-Cout << (*this).make<< endl: // display all the data members 
+Cout << *this<< endl:
 }
 }
 Car Car1;
@@ -169,7 +169,8 @@ this.year = 0;
 
 
 public:
-I did not create the “if statement”
+
+
 void display(char *make, char *model, int year){
         *this.make = make;
         *this.model = model;
