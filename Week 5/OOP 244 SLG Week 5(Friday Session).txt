@@ -1,0 +1,122 @@
+
+
+//COLLINS OLOKPEDJE
+
+#include <iostream>
+using namespace std;
+
+class Car{
+	char* make;
+	char* model;
+	int year;
+
+ 	public:
+	/**
+	CONSTRUCTOR
+	*/
+ 	Car(){
+ 	cout<<"This is the constructor";
+ 	this.make = nullptr; // should have used arrow notation
+ 	this.model = nullptr;  // should have used arrow notation
+ 	this.year = 0;  // should have used arrow notation
+ 	}
+
+	/*
+	Enhanced constructor
+	*/
+	Car(char* m_make, char *m_model){ // Maybe a const added, no strcpy we just assigned; no validating , no dynamic memory allocation. No destructor
+	this.make = m_make;  // should have used arrow notation
+	this.model = m_model; // should have used arrow notation
+	this.year = 2024;  // should have used arrow notation
+	}
+
+	/*
+	Display Function
+	*/
+ 	function Display(){ //Shouldn’t have added the word function
+		if(make == nullptr && model == nullptr && year == 0){
+		cout<< "This is an empty car";
+	} // should have added an else condition.
+ }
+
+}
+
+/**
+Main function
+*/
+
+int main(){
+	Car a;
+	a.Display();
+	Car b("Toyota", "Prius");
+	b.Display; // no paranthesis
+// no return;
+}
+
+//Maksym
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class Car {
+char* m_make;
+char* m_model;
+int m_year;
+public:
+Car();
+Car(const char* make, const char* model, int year);
+~Car();
+ostream& display(ostream& os=std::cout) const;
+};
+
+Car::Car() {
+this->m_make = nullptr;
+this->m_model = nullptr;
+this->m_year = 0;
+}
+
+Car::Car(const char* make, const char* model, int year) { //doesn’t need year argument
+*this = Car();
+if (make != nullptr && model != nullptr && year != 0) { //doesn’t need to validate year
+m_make = new char[strlen(make)+1];
+strcpy(m_make, make);
+m_model = new char[strlen(model)+1];
+strcpy(m_model, model);
+m_year = year; //I should have set year to 2024
+           }
+}
+
+Car::~Car() {
+if (m_make != nullptr) {
+delete[] m_make;
+m_make = nullptr;
+}
+if (m_model != nullptr) {
+delete[] m_model;
+m_model = nullptr;
+}
+}
+ostream& display(ostream& os) const { //needs scope resolution
+if (m_make != nullptr && m_model != nullptr && m_year != 0) {
+os << "Make: " << *this.m_make << endl; //I need paranthesis
+os << "Model: " << *this.m_model << endl; //parantheses
+os << "Year: " << *this.m_year << endl; //parantheses
+}
+else {
+os << "Empty Car" << endl;
+   }
+return os;
+}
+
+int main (void) {
+
+Car car;
+car.display();
+Car car2("Uuu", "Nimbus3000", 2000); //doesn’t need to pass in the year
+car2.display();
+return 0;
+}
+
