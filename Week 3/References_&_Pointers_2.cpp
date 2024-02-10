@@ -1,7 +1,8 @@
 #### References
 
+int b = 5;
 //References are the aliasis of already existing variable. Aliasis means another name.
- int &a = b;	// here  a is just another name for variable b. So, there is only one variable which is taking space in memory not two.
+int &a = b;	// here  a is just another name for variable b. So, there is only one variable which is taking space in memory not two.
 
 //References are always initialized while creation.
 //We can’t do something like this:
