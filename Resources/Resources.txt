@@ -1,10 +1,13 @@
 In alphabetic order
 
-Book:
-Schaum's Outline of Programming With C++, Book by John R. Hubbard
+Book: suggested By Maksym
+Schaum's Outline of Programming With C++, Book by John R. Hubbard 
 
 Course notes:
 https://intro2oop.sdds.ca/
+
+Constructors, overloading, current object and more:
+https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DijeTDVgzfK8%26list%3DPLxB4x6Rkylovdf9CeIYtL5_lAu_bXKj_9%26index%3D8&data=05%7C02%7Cpgarg13%40myseneca.ca%7C6059d5344072471f76d308dc2cd2ad39%7Ceb34f74a58e74a8b9e59433e4c412757%7C0%7C0%7C638434530576186228%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=%2FB1yVWfCs0MRSZo2nhC9OYbsUiJjnaei3G5UIZOglPA%3D&reserved=0
 
 Pointers:
 https://www.youtube.com/watch?v=zuegQmMdy8M&ab_channel=freeCodeCamp.org
