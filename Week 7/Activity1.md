@@ -1,26 +1,25 @@
-
+## Coding Question: 
  
+### Objective: Implement a class called DynamicRectangle to represent rectangles. The DynamicRectangle class should support the following functionalities: 
 
-Coding Question: 
- 
-Objective: Implement a class called DynamicRectangle to represent rectangles. The DynamicRectangle class should support the following functionalities: 
+- Constructors to initialize the rectangle with a given length and width. 
 
-Constructors to initialize the rectangle with a given length and width. 
+- Implement a copy constructor to create a deep copy of a DynamicRectangle object. 
 
-Implement a copy constructor to create a deep copy of a DynamicRectangle object. 
+- Implement a copy assignment operator to assign the contents of one DynamicRectangle object to another. 
 
-Implement a copy assignment operator to assign the contents of one DynamicRectangle object to another. 
+- Implement a destructor to deallocate memory properly. 
 
-Implement a destructor to deallocate memory properly. 
+- Overload the + operator to add two rectangles and return a new rectangle with the combined area. 
 
-Overload the + operator to add two rectangles and return a new rectangle with the combined area. 
+- Overload the == operator to check if two rectangles have the same area. 
 
-Overload the == operator to check if two rectangles have the same area. 
+- Implement a helper function doubleArea() that returns twice the area of the rectangle. 
 
-Implement a helper function doubleArea() that returns twice the area of the rectangle. 
+- Overload the input (>>) and output (<<) stream operators to allow reading from and writing to streams. 
 
-Overload the input (>>) and output (<<) stream operators to allow reading from and writing to streams. 
 
+``` C++
 // main.cpp 
 
  
@@ -75,8 +74,9 @@ int main() {
 
 } 
 
- 
+ ```
 
+``` C++
 // DynamicRectangle.h 
 
  
@@ -126,6 +126,6 @@ public:
     friend std::ostream& operator<<(std::ostream& output, const DynamicRectangle& rect); 
 
 }; 
-
+ ```
  
 
