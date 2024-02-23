@@ -1,5 +1,5 @@
-What is wrong with the code below, explain what each line will do(Without running it. If you tried enough in your brain then only try it)?
-
+### What is wrong with the code below, explain what each line will do(Without running it. If you tried enough in your brain then only try it)?
+ ``` C++
 Guess::Guess()
 {
   cout << "Default COnstructor is called"<< endl;
@@ -16,4 +16,6 @@ Guess::Guess(const char * guess_str)
 {
   cout << "Destructor is Called"<< endl;
 }
+
+```
 
