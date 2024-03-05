@@ -1,5 +1,5 @@
 ## This is the code we discussed in the Tuesday session:
-### Student attended: Elena, Tony, Naveen
+### Students attended: Elena, Tony, Naveen
 
 ``` C++
 
