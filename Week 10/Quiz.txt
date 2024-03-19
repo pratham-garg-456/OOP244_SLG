@@ -1,0 +1,63 @@
+Q1. What is the purpose of virtual functions in object-oriented programming?
+A) To enhance encapsulation
+B) To optimize code execution
+C) To facilitate polymorphism
+D) To improve inheritance
+
+Q2. What does polymorphism refer to in the context of object-oriented languages?
+A) The ability to hide implementation details
+B) The ability to create objects from classes
+C) The ability to reuse code across different types
+D) The ability to define multiple constructors
+
+Q3. Which statement best describes the difference between early binding and dynamic dispatch?
+A) Early binding occurs at runtime, while dynamic dispatch occurs at compile time.
+B) Early binding is based on the object's dynamic type, while dynamic dispatch is based on the object's static type.
+C) Early binding occurs when a function call is resolved at compile time, while dynamic dispatch occurs when it's resolved at runtime.
+D) Early binding always results in faster execution compared to dynamic dispatch.
+
+Q4. What is the significance of declaring a destructor virtual in a base class?
+A) It prevents memory leaks in derived classes.
+B) It allows dynamic allocation of objects.
+C) It ensures that the most derived destructor is called during object destruction.
+D) It facilitates dynamic type checking.
+
+
+Q5. What is the primary purpose of using abstract base classes in object-oriented programming?
+a) To define a class that cannot be instantiated and contains pure virtual functions
+b) To define a class that provides implementations for all its member functions
+c) To define a class that can be instantiated and contains concrete member functions
+d) To define a class that cannot be inherited and contains static member functions
+
+Q6. Which of the following statements best describes a pure virtual function?
+a) A function that has a definition but no declaration
+b) A function that has a declaration but no definition
+c) A function that has both declaration and definition
+d) A function that has neither declaration nor definition
+
+Q7. How is a pure virtual function declared in C++?
+a) Using the keyword "pure" before the function declaration
+b) Using the keyword "virtual" before the function declaration and assigning 1
+c) Using the keyword "virtual" before the function declaration and assigning 0
+d) Using the keyword "abstract" before the function declaration
+Q8. What is the significance of declaring a function as pure virtual in an abstract base class?
+a) It allows the function to be accessed directly without any inheritance
+b) It requires all derived classes to provide an implementation for the function
+c) It prevents the function from being accessed by any client code
+d) It allows the function to be overloaded with multiple definitions
+
+Q9. According to the notes, what is the recommended approach for performing unit tests on an interface?
+a) Conduct unit tests on concrete classes directly
+b) Modify the interface for each unit test iteration
+c) Perform unit tests on an abstract base class representing the interface
+d) Skip unit testing as interfaces are not testable
+
+Q10. How does using an array of pointers to objects facilitate polymorphism in C++?
+a) It allows for direct access to object data members
+b) It allows for efficient memory allocation for objects
+c) It enables accessing objects of different dynamic types through a common interface
+d) It ensures type safety during object instantiation
+
+
+
+Implement a “pure interface” named as iAnimal and modify the previous code to utilize it.
