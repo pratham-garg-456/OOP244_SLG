@@ -1,0 +1,120 @@
+﻿Dont Code here, code in the notepad file and paste your finalized solution here under your name
+
+
+
+
+Najib:
+
+
+class Animal {
+protected:
+    char* name;
+    int age;
+public:
+    Animal();
+    virtual void display() const {
+        cout << "Name: " << name << ", Age: " << age;
+    }
+};
+class Mammal : public Animal {
+private:
+    int numLegs;
+public:
+    Mammal();
+    void display()  {
+        Animal::display();
+        cout << ", Num Legs: " << numLegs;
+    }
+};
+class Bird : public Animal {
+private:
+    bool canFly;
+public:
+    Bird();
+    void display() const override {
+        Animal::display();
+        cout << ", Can Fly: " << (canFly ? "Yes" : "No");
+    }
+};
+
+
+class Zoo {
+private:
+    Animal* animals;
+    size_t capacity;
+    size_t count;
+
+
+—-------------------------------------------------------------------------------------------------------------------
+
+
+Elena:
+class Animal{
+char* name;
+int age;
+public:
+   Animal();
+void  Display();
+}
+class Mammal: public Animal{
+int numLegs;
+public:
+   Mammal();
+ void  Display();
+}
+Class Bird: public Mammal{
+Bool canFly;
+public:
+        Bird();
+  void Display();
+}
+Class Zoo {
+Animal *ptr;
+public:
+  Zoo();
+ void addAnimal(Animal anim);
+  void displayAnimals();
+}
+
+Animal::Animal(){
+Name[0]=’\0’;
+age = 0;
+}
+
+
+Void Animal::Display(){
+   std::cout <<”The name is: “ << name << endl;
+  std::cout<< “The age is: <<age<<endl;
+}
+
+
+Mammal::Mammal(){
+        numLegs=0;
+}
+void Mammal::Display{
+Animal::Display();
+   std::cout<< “Number of legs is: “<< numLegs<<endl;
+}
+
+Bird::Bird(){
+canFly=true;
+}
+void Bird::Display(){
+  Mammal::Display();
+  if (canFly){
+std::cout<<”Can fly”<<endl;
+}
+else{
+std::cout<<”Cannot fly”<<endl;
+}
+
+Zoo::Zoo(){
+ptr=nullptr;
+}
+
+Zoo::addAnimals(Animal anim){
+if(anim != ‘\0’)
+{
+
+
+Animal = new char[strlen(anim.name)];
