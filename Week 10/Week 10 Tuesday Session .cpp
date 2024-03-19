@@ -118,14 +118,9 @@ int main() {
 	Animal** 
 	Student Elena (1028, 20);
 	
-	Animal dog;
-	
+	Animal dog;	
 	
 	Animal Pg("Elephant" , 15); // strings are always const or immutable
-	
-	
-	
-	
 	
 
     Zoo zoo(5);
