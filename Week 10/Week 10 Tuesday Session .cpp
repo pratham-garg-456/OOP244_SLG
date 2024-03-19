@@ -14,7 +14,7 @@ class Animal{
 	// Animal(const char * a, int b); // put const always when passing string
 	//Animal(const char * a);
 	virtual void  display();  // dynamic binding
- } 
+ }
  
  Animal::Animal(const char * a, int b){
 	 
