@@ -1,0 +1,82 @@
+Coding Question: Library Items Implementation
+Instructions:
+You are tasked with implementing a C++ program that manages library items. The program should define two classes: LibraryItem and its subclasses Book and ElectronicResource.
+
+Implement the LibraryItem class according to the following specifications:
+
+It should have private member variables m_title (string), m_author (string), and m_year (integer).
+Provide a default constructor that initializes m_title, m_author, and m_year to nullptr, nullptr, and 0 respectively.
+Implement a parameterized constructor that takes title (string), author (string), and year (integer) as arguments and initializes the respective member variables.
+Implement a copy constructor and an assignment operator (operator=) to ensure proper deep copying of objects.
+Implement a virtual function display() that prints out the title, author, and year of the item.
+Implement a virtual function operator== to compare two LibraryItem objects based on their title, author, and year.
+Implement a destructor to release dynamically allocated memory.
+
+Implement the Book class, which inherits from LibraryItem, according to the following specifications:
+
+It should have an additional private member variable m_pages (integer).
+Provide a constructor that initializes m_title, m_author, m_year, and m_pages.
+Implement a copy constructor and an assignment operator to ensure proper deep copying.
+Implement the display() function to print out the book's details along with the number of pages.
+Implement the operator== function to compare two Book objects based on their pages in addition to the comparison done in the base class.
+
+
+Implement the ElectronicResource class, which also inherits from LibraryItem, according to the following specifications:
+
+It should have an additional private member variable m_url (string).
+Provide a constructor that initializes m_title, m_author, m_year, and m_url.
+Implement a copy constructor and an assignment operator to ensure proper deep copying.
+Implement the display() function to print out the electronic resource's details along with its URL.
+Implement a destructor to release dynamically allocated memory.
+
+Helper functions: 
+Implement operator<< to allow printing of LibraryItem objects using the << operator.
+Implement operator< to allow comparing LibraryItem objects based on their years.
+
+Main function:
+
+int main() {
+	LibraryItem** items = new LibraryItem*  [3];
+
+	Book item1 = { "The Great Gatsby", "F. Scott Fitzgerald", 1925, 180 };
+	ElectronicResource item2 = { "Introduction to Algorithms", "Thomas H. Cormen", 2009, "http://example.com/algorithms" };
+	Book item3 = { "To Kill a Mockingbird", "Harper Lee", 1960, 281 };
+	Book item4 = { "The Great Gatsby", "F. Scott Fitzgerald", 1925, 180 };
+	items[0] = &item1;
+	items[1] = &item2;
+	items[2] = &item3;
+
+	for (int i = 0; i < 3; i++) {
+		std::cout << *items[i] << std::endl;
+	}
+	cout << "Checking operator == for books" << endl;
+	cout << "item 1 is equal to item 3: " << (item1 == item3 ? "true" : "false");
+	cout<< endl;
+	cout << "item 1 is equal to item 4: "<<( (item1 == item4) ? "true" : "false");
+	cout << endl;
+
+
+	delete [] items;
+	return 0;
+}
+
+Output:
+
+Title: The Great Gatsby
+Author: F. Scott Fitzgerald
+Year: 1925
+Pages: 180
+
+Title: Introduction to Algorithms
+Author: Thomas H. Cormen
+Year: 2009
+URL: http://example.com/algorithms
+
+Title: To Kill a Mockingbird
+Author: Harper Lee
+Year: 1960
+Pages: 281
+
+Checking operator == for books
+item 1 is equal to item 3: false
+item 1 is equal to item 4: true
