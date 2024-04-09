@@ -1,0 +1,48 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+class Person{
+    char m_name;
+    int m_age;
+public:
+    Person(char name, int age){
+        m_name = name;
+        m_age = age;
+    }
+    virtual void display(){
+        cout<<"name: "<< m_name<< endl << " age: "<<m_age<< endl;
+    }
+    //member operator
+    Person& operator+=(int a){
+        m_age+=a;
+        return *this;
+    }
+};
+
+class Student: public Person{
+    int m_id;
+public:
+    Student(char name, int age, int id):Person(name, age){
+        m_id = id;
+    }
+    void display(){
+        Person::display();
+        cout << "id: " << m_id << endl;
+    }
+};
+
+int main() {
+    // Polymorphic object: 
+    // pointer involved & references
+    // Multiplicity of the object creation
+    Person Elena('E',22);
+    Elena+=1;
+    
+    Student Najib('N',24, 23432);
+    Elena.display();
+    Najib.display();
+    
+
+    return 0;
+}
